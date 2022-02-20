@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".sign_up">
+
+
+
+    <TextView
+        android:id="@+id/whatsyourname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="What's your name?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:paddingTop="15sp"/>
+    <TextView
+        android:id="@+id/enterthename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Enter the name you use in real life"
+        android:textColor="#5b39c6"
+        app:layout_constraintTop_toBottomOf="@id/whatsyourname"
+        android:paddingTop="8dp"/>
+    <EditText
+        android:id="@+id/Firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="First name"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@id/enterthename"
+        android:layout_marginTop="35dp"
+        android:paddingTop="25dp"/>
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Last name"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@id/Firstname"
+        android:layout_marginTop="35dp"
+        android:paddingTop="25dp"/>
+<Button
+    android:id="@+id/next"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Next"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintStart_toEndOf="parent"
+    android:background="@drawable/rounded_button"
+    app:layout_constraintTop_toBottomOf="@id/lastname"
+    android:layout_marginTop="280dp"/>
+
+
+</android.support.constraint.ConstraintLayout>

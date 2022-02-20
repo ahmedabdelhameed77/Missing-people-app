@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".mobile_phone">
+
+    <TextView
+        android:id="@+id/enteryournumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Enter your mobile number"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="15sp"
+        android:textColor="#5b39c6"
+        app:layout_constraintTop_toBottomOf="@id/enteryournumber"
+        android:text="Enter the mobile number where you can be reached"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="15sp"
+        android:textColor="#5b39c6"
+        app:layout_constraintTop_toBottomOf="@id/line1"
+        android:text="You can hide this from your profile later "
+        android:layout_marginTop="5dp"/>
+    <EditText
+        android:id="@+id/mobilenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="15sp"
+        android:textColor="#5b39c6"
+        app:layout_constraintTop_toBottomOf="@id/line2"
+        android:hint="Mobile number"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mobilenumber"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="280dp"/>
+
+</android.support.constraint.ConstraintLayout>
